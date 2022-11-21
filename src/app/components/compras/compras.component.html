@@ -1,0 +1,16 @@
+<div>
+    <h1>Compras</h1>
+    <h2 *ngIf="compras.length == 0" style="color: red">No hay compras</h2>
+    <table class="table table-striped">
+        <thead>
+            <th>IdCubo</th>
+            <th>Fecha</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let comp of compras">
+                <td>{{comp.idCubo}}</td>
+                <td>{{comp.fechaPedido}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

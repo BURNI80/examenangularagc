@@ -1,0 +1,15 @@
+<div>
+    <h1>Zona De Seguridad</h1>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Opciones
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" [routerLink]="['/cubos/perfil']">Ver Perfil</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/cubos/compras']">Mostrar Compras</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/cubos/comprar']">Comprar</a></li>
+        </ul>
+        <br>
+        <button (click)="cerrarSesion()" class="btn btn-danger" >Cerrar Sesion</button>
+    </div>
+</div>

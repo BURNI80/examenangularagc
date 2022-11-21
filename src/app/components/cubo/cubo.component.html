@@ -1,0 +1,14 @@
+<div>
+    <table class="table table-striped">
+        <thead>
+            <th>Comentario</th>
+            <th>Fecha</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let com of comentarios">
+                <td>{{com.comentario}}</td>
+                <td>{{com.fechaComentario}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

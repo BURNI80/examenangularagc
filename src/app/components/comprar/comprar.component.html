@@ -1,0 +1,8 @@
+<div class="container" style="width: 40%">
+    <h1>Comprar</h1>
+    <form #userForm="ngForm" (ngSubmit)="comprar()">
+        <label class="form-label">ID cubo: </label>
+        <input class="form-control" type="text" id="id" name="id" [(ngModel)]="id"/>
+        <button class="btn btn-primary">Comprar</button>
+    </form>
+</div>

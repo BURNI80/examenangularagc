@@ -1,0 +1,12 @@
+<div class="container" style="width: 40%">
+    <h1>Registro</h1>
+    <form #userForm="ngForm" (ngSubmit)="registro()">
+        <label class="form-label">Nombre: </label>
+        <input class="form-control" type="text" name="nombre" #nombre/>
+        <label class="form-label">Email: </label>
+        <input class="form-control" type="text" name="email" #email />
+        <label class="form-label">Contraseña: </label>
+        <input class="form-control" type="password" name="pass" #pass />
+        <button class="btn btn-primary">Registrarse</button>
+    </form>
+</div>
